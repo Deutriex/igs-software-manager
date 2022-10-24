@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>The IGS employee list</h1>
+
+<table class="employee_list">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+
+    </thead>
+{% for employee in employee_list %}
+    <tr>
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.get_department_name }}</td>        
+    </tr>
+{% endfor %}
+</table>
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+H1, TD, TH {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.employee_list {
+    border-collapse: collapse;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+}
+
+.employee_list TH {
+    text-align: left;
+    color: #FFF;
+    background-color: rgb(67, 91, 119)
+}
+
+.employee_list TD, .employee_list TH {
+    margin: 0px;
+    padding: 5px;
+}
+
+.employee_list > TBODY > TR:nth-child(odd) > TD {
+    background-color: #EEE;
+}
